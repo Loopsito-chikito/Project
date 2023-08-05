@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Menú</title>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1,maximum-sacale=1,munumym.scale=1">
+	<link rel="stylesheet" href="css/estilos.css"> 
+</head>
+
+<body class="body1">
+		<header>
+				<input type="checkbox" id="btn-menu">
+				<label for="btn-menu"><img src="iconomenu.jpg" alt=""> </label>
+			<nav class="menu">
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                    ...
+                    <li role="separator" class="divider" >
+                    ...
+					<!-- ETIQUETA  PARA CREAR LOS ITEM DEL MENU -->
+					<form action="" method="post" name="formulario">
+						<select styleid="typeDocument" placeholder="Seleccione" name="typeDocument" id="typeDocument" onchange="location.href=formulario.typeDocument.value">
+							<option value="menuAdministrador.html">Gestionar Usuarios</option>
+							<option value="GestionarDomicilios.html">Usuarios registrados</option>
+							<option value="usuariosDadosDeBaja.html">Usuarios dados de baja</option>
+							<option value="usuariosSinValidar.html">Usuarios sin validar</option>
+						</select>
+					</form>
+					<li><a href="GestionarProductos.html">Gestionar Productos</a></li>
+					<li><a href="GestionarPedidos.html">Gestionar Pedidos</a></li>
+					<li><a href="GestionarDomicilios.html">Gestionar Domicilios</a></li>	
+				</ul>	
+			</nav>
+		</header>
+		
+ <!-- FORMULARIO PARA VOLVER AL INDEX-->
+    <form class="form2"><h2>Bienvenido Administrador</h2>
+		<center><a href="menu.html">Menu principal</a></center>
+	</form>
+  </body>
+</html>
