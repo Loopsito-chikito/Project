@@ -4,6 +4,7 @@
 	font-family: cursive;
 	box-sizing: border-box;
 }
+
 .body2{
 	background-image: url(../img/xdd.svg);
 	background-attachment: fixed;
@@ -41,7 +42,7 @@
 
 header {
 	width: 100%;
-	background:  rgb(0, 0, 0);
+	background:  #ffffff;
 	}
 	
 
@@ -73,7 +74,7 @@ header label {
 .menu li a {
 	display: block;
 	padding: 15px 20px;
-	color: #f8f8f8;
+	color: #000000;
 	text-decoration: none;
 	}
 

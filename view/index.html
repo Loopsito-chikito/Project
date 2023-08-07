@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- CABECERA DE LA PAGINA-->
      <head>
 	     <title>Pagina de inicio de sesion</title>
 	     <meta charset="UFT-8">
 	     <meta name="viewport" content="width=device-width, user-scalable=no,
 	     initial-scale=1,maximum-sacale=1,munumym.scale=1">
-		 <!-- ETIQUETA PARA LLAMAR ESTILOS CSS-->
-	     <link rel="stylesheet" href="css/estilos.css">
-	<!-- ETIQUETA PARA LLAMAR LAS VALIDACIONES JAVA SCRIPT-->	 
+	     <link rel="stylesheet" href="../assets/css/estilos.css"> 
 	<script src="js/validationIndex.js"></script>
 
 </head> 
+<body class="body0">
 
-<!-- INICIO CUERPO DE LA PAGINA-->
-<body class="body0"> 
+	<nav class="menu">
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+			...
+			<li role="separator" class="divider" >
+			...
+			<!-- ETIQUETA  PARA CREAR LOS ITEM DEL MENU -->
+			<li><a href="index.html"><img src="..//assets/img/fud.png" alt=""></a></li>
+			
+		</ul>	
+	</nav>
 
 	<!--* <form ETIQUETA PARA UTILIZAR FORMULARIOS   
 		* action="menu.html" esta funcion se encarga de abrir la nueva Pagina
@@ -23,15 +29,19 @@
 	<form action="menu.html" method="post" onsubmit="return ValidationEvent()">
 		<!-- la funcion onsubmit="return ValidationEvent() se encarga de ir al java script "js/validationIndex.js"
 			 y validdar los campos, alli pueden ver las validacciones-->
-		<h2>Inicie Sesión</h2>
+		<h2>Bienvenido</h2>
 		<!-- ETIQUETAS CONTENEDORAS <div  la funcion  class="cuerpo"> es llamada en los estilos CSS para realizar 
 			el Maquetado de la Pagina -->
 		<div class="cuerpo">
-		<label>Usuario :</label>
-		<!-- ETIQUETA DE CAPTURA DE DATOS POR PANTALLA-->
-		<input id="name" name="nombre" placeholder="Nombre" type="text">
-		<label>Contraseña :</label>
-		<input id="password" name="contrasena" placeholder="password" type="password">
+		 
+		<div class="mb-3">
+			<label for="formGroupExampleInput" class="form-label">Usuario</label>
+			<input type="email" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su correo">
+		  </div>
+		  <div class="mb-3">
+			<label for="formGroupExampleInput2" class="form-label">Contraseña</label>
+			<input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su Contraseña">
+		  </div>
 		<input type="submit" value="Ingresar">
 		</div>
 		<center><span>Para Su Password Utilice Mayusculas</span></center>
